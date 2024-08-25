@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+/* navBar css */
+.navbar{
+  font-family: "Roboto", sans-serif;
+  font-size:17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  border-bottom:0.5px solid gray;
+}
+.nav-link{
+  font-weight:300;
+
+}
+.active{
+border-bottom:1px solid black
+}
+.footer{
+  color:white;
+  padding:25px;
+background: linear-gradient(90deg, rgba(50,212,199,1) 0%, rgba(5,5,5,1) 100%, rgba(5,209,250,1) 100%);
+}
+.footer a{
+  text-decoration: none;
+  padding:10px;
+  color:white;
+  font-size: 20px;
+}
+.footer a:hover{
+  color:#ffefba;
+  border-bottom:1px solid #ffefba;
+}
+.register{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height:80vh;
+}
+.list-group-item.active{
+  background-color: rgba(50,212,199,1) !important;
+}
