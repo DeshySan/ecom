@@ -52,3 +52,7 @@ background: linear-gradient(90deg, rgba(50,212,199,1) 0%, rgba(5,5,5,1) 100%, rg
 .list-group-item.active{
   background-color: rgba(50,212,199,1) !important;
 }
+.product-link{
+  color:black;
+  text-decoration: none;
+}

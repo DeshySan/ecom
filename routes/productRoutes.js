@@ -4,6 +4,9 @@ import {
   createProductController,
   deletController,
   getProductController,
+  productCountController,
+  productFilterController,
+  productListController,
   productPhotoController,
   singleProductController,
   updateProductController,
@@ -18,8 +21,8 @@ router.post(
   formidable(),
   createProductController
 );
-router.post(
-  "/update-product",
+router.put(
+  "/update-product/:pid",
   requireSignIn,
   isAdmin,
   formidable(),
@@ -30,4 +33,11 @@ router.get("/get-product", getProductController);
 router.get("/get-product/:slug", singleProductController);
 router.get("/get-product-photo/:pid", productPhotoController);
 router.delete("/product/:pid", deletController);
+
+//filter products
+router.post("/product-filters", productFilterController);
+//product-count
+router.get("/product-count", productCountController);
+//product per page
+router.get("/product-list/:page", productListController);
 export default router;
